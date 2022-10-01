@@ -118,6 +118,71 @@ button[disabled] {
   overflow: hidden;
 }
 
+#password-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: hsl(0, 0%, 100%);
+  width: 800px;
+  max-width: 80%;
+}
+
+.popup-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+}
+
+.title {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  font-size: 22px;
+  font-weight: bold;
+  color: hsl(206, 17%, 28%);
+}
+
+#settings {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+#popup-footer {
+    text-align: center;
+}
+
+#generateAnswer {
+  border: none;
+  background-color: hsl(360, 91%, 36%);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+  align-items: center;
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
