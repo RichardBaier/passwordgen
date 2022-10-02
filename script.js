@@ -19,6 +19,7 @@ function writePassword() {
   passwordText.value = password;
 }
 
+//randomizes the password criteria selected
 const generatePassword = (length, characters) => {
   let password = "";
   for (let i = 0; i < length; i++) {
@@ -29,9 +30,18 @@ const generatePassword = (length, characters) => {
   return password;
 };
 
+//Copies the password that was created 
+const copyBtn = document.getElementById("copy");
+copyBtn.addEventListener("click", () => {
+  passwordTxt.select();
+  document.execCommand("copy");
+  alert("Password Copied");
+});
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+//allows the user to choose the criteria in the password and sets the value of characters
 generateBtn.addEventListener("click", () => {
   let characters = alpha;
   incNumbers.checked ? (characters += numbers) : "";
@@ -39,6 +49,7 @@ generateBtn.addEventListener("click", () => {
   passwordTxt.value = generatePassword(length.value, characters);
 });
 
+//opens and closes the popup
 function openForm() {
   document.getElementById("password-popup").style.display = "block";
 }

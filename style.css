@@ -58,6 +58,16 @@ header {
   text-align: center;
 }
 
+/* This is the design of the copy button */
+#copy {
+  margin-bottom: 10px;
+  text-align: center;
+  border: none;
+  background-color: hsl(360, 91%, 36%);
+  border-radius: 25px;
+  color: hsl(0, 0%, 100%);
+}
+
 .card-footer::before {
   content: " ";
   display: block;
@@ -118,6 +128,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/*Custom popup for criteria*/
 #password-popup {
   display: none;
   position: fixed;
