@@ -160,6 +160,10 @@ button[disabled] {
   color: hsl(206, 17%, 28%);
 }
 
+.close-button {
+  cursor: pointer;
+}
+
 #settings {
   padding: 10px 15px;
   display: flex;
