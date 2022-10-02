@@ -10,3 +10,6 @@ I was able to make changes like adding a custom popup with checkboxes for desire
 ![snapshot of popup](Assets/images/Screen Shot 2022-10-01 at 8.46.08 PM.png)
 
 ## Links
+https://github.com/RichardBaier/passwordgen
+
+https://richardbaier.github.io/passwordgen/
